@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 
 export default class CoordinatesButton extends Component {
   clickButton = (e) => {
-    setTimeout(() => {this.onDelayedClick, this.delay)}
+    setTimeout(() => {this.onDelayedClick, this.delay})
   }
    render(){
     return (
