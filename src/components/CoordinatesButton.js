@@ -2,9 +2,14 @@ import React, {Component} from 'react';
 
 
 export default class CoordinatesButton extends Component {
-  onReceiveCoordinates = (x,y) => {console.log('Entering password...')};
-  render () {
-    return(
-  <input onKeyUp={this.typing} type="password" />)
+  handleClickButton = (event) => {
+    const coordinates = [event.clientX, event.clientY]
+    this.props.onReceiveCoordinates(coordinates)
+  }
+   render(){
+    return (
+      <button onClick={this.handleClickButton}>
+      </button>
+    )
   }
 }
