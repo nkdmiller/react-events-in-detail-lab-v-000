@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 
 export default class CoordinatesButton extends Component {
   clickButton = (e) => {
-    const coordinates = [e.clientX, e.clientY]
+    setTimeout()
     this.props.onReceiveCoordinates(coordinates)
   }
    render(){
